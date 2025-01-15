@@ -79,6 +79,7 @@ def log(status, message):
         logger.log_text(message, severity=status)
     except Exception as e:
         logger.error(f"Erro encontrado: {e}")
+        
     # directory = 'logs'
     # folder = os.path.join(directory, datetime.now().strftime('%Y%m%d'))
     # os.makedirs(folder, exist_ok=True)
